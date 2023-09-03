@@ -14,5 +14,5 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - run: ${{ github.action_path }}\src\ISCC.exe ${{inputs.filepath}} ${{variables}}
+    - run: ${{ github.action_path }}\src\ISCC.exe ${{inputs.filepath}} ${{inputs.variables}}
       shell: cmd
